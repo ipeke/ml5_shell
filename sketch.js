@@ -23,7 +23,7 @@ let canvasHeight = 100;
 function setup() {
   noCanvas();
   // Create the LSTM Generator passing it the model directory
-  charRNN = ml5.charRNN('./models/woolf/', modelReady);
+  charRNN = ml5.charRNN('./models/shakespeare/', modelReady);
   // Grab the DOM elements
   textInput = select('#textInput');
   tempSlider = select('#tempSlider');
